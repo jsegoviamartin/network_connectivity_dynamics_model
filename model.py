@@ -7,7 +7,7 @@
 # 2. Funtion to calculate agents' choices
 # 3. Function to store produced variants in each agents' memory
 # 4. Function to calculate entropy
-# 5. A class (main) to set up number of agents, variants, population connectivity dynamic, memory lenght,
+# 5. A function (main) to set up number of agents, variants, population connectivity dynamic, memory lenght,
 # level of content bias, level of coordination bias, mutation/innovation rate,
 # singleton distribution (variants' quality) and number of simulations.
 #
