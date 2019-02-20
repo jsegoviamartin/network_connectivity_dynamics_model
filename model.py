@@ -11,13 +11,15 @@
 # level of content bias, level of coordination bias, mutation/innovation rate,
 # singleton distribution (variants' quality) and number of simulations.
 #
-# José Segovia Martín (Autonomous University of Barcelona)
+# Jose Segovia Martin (Autonomous University of Barcelona)
 
 
 from __future__ import division
 from random import random, sample
+import random as rand
 from bisect import bisect
 from collections import deque
+from itertools import permutations
 import csv
 import math
 
@@ -102,8 +104,6 @@ class Match():
                 self.agents[agent1].mem_shown.append(signals[agent1])
                 self.agents[agent2].mem_shown.append(signals[agent2])
 
-
-
     class player():
         def __init__(self, menLen):
             self.mem_shown = deque(maxlen=menLen)
@@ -114,6 +114,17 @@ def entropy(lista):
     N = sum(lista)
     probs = (freq/N for freq in lista if freq>0)
     return -sum(x * math.log(x, 2) for x in probs)
+
+#Function to randomize connectivity dynamic without repetition
+def group(agents, n=7):
+    all = set()
+    for caso in permutations(agents):
+        gen = zip(*[iter(caso)] * 2)
+        gen = tuple(sorted(tuple(sorted(pair)) for pair in gen))
+        all.add(gen)
+    all = list(all)
+    rand.shuffle(all)
+    return all[:n]
 
 def main():
     #Agents
@@ -128,6 +139,9 @@ def main():
              [(1, 6), (3, 8), (5, 2), (7, 4)],
              [(1, 7), (2, 8), (3, 5), (4, 6)],
              [(1, 8), (3, 6), (5, 4), (7, 2)]]
+    # Randomize pair composition (only use the following two lines of code if you want to randomize pair composition):
+    # network = group(agents)
+    # pairs = [list(elem) for elem in network]
     # Memory length
     menLen = 3
     #Connectivity dynamic
@@ -135,8 +149,8 @@ def main():
     #Singleton distribution (variant quality distribution or variants' selctive value)
     s = [1, 0, 0, 0, 0, 0, 0, 0]
     # s = [0.9, 1, 1, 0.8, 0, 0.3, 0.3, 0]
-    # s2 = [1, 0, 0, 0, 0, 0, 0, 0]
-    # s3 = [1, 0, 0, 0, 0, 0, 0, 0]
+    s2 = [1, 0, 0, 0, 0, 0, 0, 0]
+    s3 = [1, 0, 0, 0, 0, 0, 0, 0]
 
     # Content bias ('cont'): no content bias=0.0, fully content biased population=1.0
     # Coordination bias ('coord'): fully egocentric=0.0, fully allocentric=1.0, neutral=0.5
@@ -275,16 +289,19 @@ def main():
                          for sample in range(len(samples))}
                   for agent in agents}
 
+    for sample in range(len(samples)):
+        # Use the following two lines of code to randomize the pair composition
+        # network = group(agents)
+        # pairs = [list(elem) for elem in network]
+        for mu in range(len(samples)):
+            for _ in range(simulations):
+                game = Match(agents, menLen, pairs, signals, s, s2, s3, samples[mu]['cont'], samples[mu]['coord'], samples[mu]['mut'])
+                game.play()
+                for n, round in enumerate(game.memory):
+                    for agent, signal in round.items():
+                        statistics[agent][mu][signal][n] += 1
 
-    for mu in range(len(samples)):
-        for _ in range(simulations):
-            game = Match(agents, menLen, pairs, signals, s, s2, s3, samples[mu]['cont'], samples[mu]['coord'], samples[mu]['mut'])
-            game.play()
-            for n, round in enumerate(game.memory):
-                for agent, signal in round.items():
-                    statistics[agent][mu][signal][n] += 1
-
-    with open('data.csv', 'wb') as csvfile:
+    with open('test.csv', 'wb') as csvfile:
             writer =csv.writer(csvfile, delimiter=';',
                         quotechar='"', quoting=csv.QUOTE_MINIMAL)
             writer.writerow(['Sample', 'Agent', 'Memory', 'Generation', 'Connectivity', 'Content bias', 'Coordination bias', 'Mutation rate'] + signals +
