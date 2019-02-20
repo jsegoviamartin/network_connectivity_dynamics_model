@@ -3,7 +3,7 @@ Agent-based model to calculate convergence and adaptiveness by manipulating conn
 
 Export citation:
 
-Bib TeX of the paper
+Bib TeX of the preprint
 ```
 @ARTICLE{2019arXiv190206598S,
        author = {{Segovia Mart{\'\i}n}, Jos{\'e} and {Walker}, Bradley and
