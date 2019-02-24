@@ -156,7 +156,7 @@ def main():
     # Coordination bias ('coord'): fully egocentric=0.0, fully allocentric=1.0, neutral=0.5
     # mutation rate ('mut')
     #Setup for one parameter combination:
-    samples = [{'cont': 0.2, 'coord': 0.5, 'mut': 0.02} for _ in range(1000)]
+    samples = [{'cont': 0.2, 'coord': 0.5, 'mut': 0.02} for _ in range(1)]
     #Setup for all parameter combinations (content bias and coordination bias):
     #samples = [
                # {'cont': 0.0, 'coord': 0.0, 'mut': 0.02},
@@ -280,65 +280,74 @@ def main():
                # {'cont': 0.8, 'coord': 1.0, 'mut': 0.02},
                # {'cont': 0.9, 'coord': 1.0, 'mut': 0.02},
                # {'cont': 1.0, 'coord': 1.0, 'mut': 0.02}]
-    #samples = [d for d in samples for _ in range(1000)]
+    #samples = [d for d in samples for _ in range(1)]
 
-    simulations = 1
+    simulations = 1000
 
-    statistics = {agent:{sample:{signal:[0 for round in range(1, len(pairs) + 1)]
-                                 for signal in signals}
-                         for sample in range(len(samples))}
-                  for agent in agents}
+    statistics = {sim: {agent: {sample: {signal: [0 for round in range(1, len(pairs) + 1)]
+                                         for signal in signals}
+                                for sample in range(len(samples))}
+                        for agent in agents}
+                  for sim in range(simulations)}
 
-    for sample in range(len(samples)):
-        # Use the following two lines of code to randomize the pair composition
-        # network = group(agents)
-        # pairs = [list(elem) for elem in network]
+    for sim in range(simulations):
+        network = group(agents)
+        pairs = [list(elem) for elem in network]
         for mu in range(len(samples)):
-            for _ in range(simulations):
-                game = Match(agents, menLen, pairs, signals, s, s2, s3, samples[mu]['cont'], samples[mu]['coord'], samples[mu]['mut'])
-                game.play()
-                for n, round in enumerate(game.memory):
-                    for agent, signal in round.items():
-                        statistics[agent][mu][signal][n] += 1
+            game = Match(agents, menLen, pairs, signals, s, s2, s3, samples[mu]['cont'], samples[mu]['coord'],
+                         samples[mu]['mut'])
+            game.play()
+            for n, round in enumerate(game.memory):
+                for agent, signal in round.items():
+                    statistics[sim][agent][mu][signal][n] += 1
 
     with open('test.csv', 'wb') as csvfile:
-            writer =csv.writer(csvfile, delimiter=';',
-                        quotechar='"', quoting=csv.QUOTE_MINIMAL)
-            writer.writerow(['Sample', 'Agent', 'Memory', 'Generation', 'Connectivity', 'Content bias', 'Coordination bias', 'Mutation rate'] + signals +
-                            ['Population signals'] + ['Entropy_population'] + ['Entropy_subpopulation_1'] + ['Entropy_subpopulation_2'] + ['Subpopulation_1 signals'] + ['Subpopulation_2 signals'])
+        writer = csv.writer(csvfile, delimiter=';',
+                            quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(
+            ['Simularion', 'Sample', 'Agent', 'Memory', 'Generation', 'Condition', 'Content bias', 'Coordination bias',
+             'Mutation rate'] + signals + ['Population signals'] + ['Entropy_population'] + ['Entropy_subpopulation_1'] + ['Entropy_subpopulation_2'] + ['Subpopulation_1 signals'] + ['Subpopulation_2 signals'])
 
-            for agent in agents:
+        # Creando listas que contienen la produccion de cada senal: para toda la poblacion (aux) y para cada jugador (auxn)
+        for agent in agents:
+            for sim in range(simulations):
                 for mu in range(len(samples)):
                     for round in range(1, len(pairs) + 1):
-                        aux = [statistics[agent][mu][signal][round - 1] for signal in signals]
-                        aux1 = [statistics[1][mu][signal][round - 1] for signal in signals]
-                        aux2 = [statistics[2][mu][signal][round - 1] for signal in signals]
-                        aux3 = [statistics[3][mu][signal][round - 1] for signal in signals]
-                        aux4 = [statistics[4][mu][signal][round - 1] for signal in signals]
-                        aux5 = [statistics[5][mu][signal][round - 1] for signal in signals]
-                        aux6 = [statistics[6][mu][signal][round - 1] for signal in signals]
-                        aux7 = [statistics[7][mu][signal][round - 1] for signal in signals]
-                        aux8 = [statistics[8][mu][signal][round - 1] for signal in signals]
+                        aux = [statistics[sim][agent][mu][signal][round - 1] for signal in signals]
+                        aux1 = [statistics[sim][1][mu][signal][round - 1] for signal in signals]
+                        aux2 = [statistics[sim][2][mu][signal][round - 1] for signal in signals]
+                        aux3 = [statistics[sim][3][mu][signal][round - 1] for signal in signals]
+                        aux4 = [statistics[sim][4][mu][signal][round - 1] for signal in signals]
+                        aux5 = [statistics[sim][5][mu][signal][round - 1] for signal in signals]
+                        aux6 = [statistics[sim][6][mu][signal][round - 1] for signal in signals]
+                        aux7 = [statistics[sim][7][mu][signal][round - 1] for signal in signals]
+                        aux8 = [statistics[sim][8][mu][signal][round - 1] for signal in signals]
 
+                        # Lista que contiene los sumatorios de cada tipo de senales producidas a nivel de la poblacion global en cada muestra y ronda
                         summation_pop = []
+                        # Lista que contiene los sumatorios de cada tipo de senales producidas a nivel de subpoblacion en cada muestra y ronda
+                        summation_subpop_1 = []
+                        summation_subpop_2 = []
 
-                        summation_subpop_1=[]
-                        summation_subpop_2=[]
-
-
+                        # Sumando las senales de cada tipo
                         for i in range(len(aux1)):
-                            summation_pop.append(aux1[i] + aux2[i] + aux3[i] + aux4[i] + aux5[i] + aux6[i] + aux7[i] + aux8[i])
-
+                            # A nivel de la poblacion
+                            summation_pop.append(
+                                aux1[i] + aux2[i] + aux3[i] + aux4[i] + aux5[i] + aux6[i] + aux7[i] + aux8[i])
+                            # A nivel de las subpoblaciones
                         for i in range(len(aux1)):
                             summation_subpop_1.append(aux1[i] + aux2[i] + aux3[i] + aux4[i])
                             summation_subpop_2.append(aux5[i] + aux6[i] + aux7[i] + aux8[i])
 
-                        writer.writerow([mu + 1, agent, menLen, round, connectivity, samples[mu]['cont'], samples[mu]['coord'],
-                                         samples[mu]['mut']] + aux + [summation_pop] + [entropy(summation_pop)] + [entropy(summation_subpop_1)] + [entropy(summation_subpop_2)] + [summation_subpop_1] + [summation_subpop_2])
+                        writer.writerow([sim + 1, mu + 1, agent, menLen, round, connectivity, samples[mu]['cont'],
+                                         samples[mu]['coord'],
+                                         samples[mu]['mut']] + aux + [summation_pop] + [entropy(summation_pop)] + [
+                                            entropy(summation_subpop_1)] + [entropy(summation_subpop_2)] + [
+                                            summation_subpop_1] + [summation_subpop_2])
+
 
 if __name__ == '__main__':
     main()
-
 #Pair composition:
 #Early connectyvity
  #   pairs = [[(1, 2), (3, 4), (5, 6), (7, 8)],
