@@ -291,8 +291,9 @@ def main():
                   for sim in range(simulations)}
 
     for sim in range(simulations):
-        network = group(agents)
-        pairs = [list(elem) for elem in network]
+        # Use the following two lines of code to randomize the pair composition
+        # network = group(agents)
+        # pairs = [list(elem) for elem in network]
         for mu in range(len(samples)):
             game = Match(agents, menLen, pairs, signals, s, s2, s3, samples[mu]['cont'], samples[mu]['coord'],
                          samples[mu]['mut'])
