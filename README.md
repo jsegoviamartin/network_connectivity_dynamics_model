@@ -5,13 +5,9 @@ To successfully run these scripts, you need a number of Python packages.They are
 
 The purpose of the model is to understand how the interaction between cognitive biases, memory and the order in which agents pair with each other over time affect convergence. It also aims to evaluate the relative importance of each parameter combination and make predictions on the evolution of cultural diversity. 
 
-You can manipulate a number of parameters:
-Content bias
-Coordination bias
-Pair composition
-Memory size
-Number of agents
-Innovation rate
+You can manipulate a number of parameters: Content bias, Coordination bias, Pair composition, Memory size, Number of agents, Number of rounds, Innovation rate.
+
+In a second version of the model (2.0) you will also beable to manipulate value systems and institutional reinforcement.
 
 In the following link you can visualise how the simulations look like:
 https://jsegoviamartin.github.io/simulations/
