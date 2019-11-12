@@ -7,7 +7,7 @@ The purpose of the model is to understand how the interaction between cognitive 
 
 You can manipulate a number of parameters: Content bias, Coordination bias, Pair composition, Memory size, Number of agents, Number of rounds, Innovation rate.
 
-In a second version of the model (2.0) you will also beable to manipulate value systems and institutional reinforcement.
+In a second version of the model (2.0) you will also be able to manipulate value systems and institutional reinforcement.
 
 In the following link you can visualise how the simulations look like:
 https://jsegoviamartin.github.io/simulations/
