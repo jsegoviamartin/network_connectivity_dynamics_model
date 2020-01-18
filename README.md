@@ -9,7 +9,7 @@ You can manipulate a number of parameters: Content bias, Coordination bias, Pair
 
 In a second version of the model (2.0) you will also be able to manipulate value systems and institutional reinforcement.
 
-The file named Experiment_Data_and_code contains experimental data and simulation code to perform the analysis described in "Testing early and late connectivity dynamics in the lab: an experiment using 4-agent micro-societies" (preprint forthcoming).
+The file named Experiment_Data_and_code contains experimental data and simulation code to perform the analyses described in "Testing early and late connectivity dynamics in the lab: an experiment using 4-agent micro-societies" (preprint forthcoming).
 
 In the following link you can visualise how the simulations look like:
 https://jsegoviamartin.github.io/simulations/
