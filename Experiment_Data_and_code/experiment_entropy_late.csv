@@ -1,0 +1,193 @@
+Community,Condition,Order,Category,Concept,Round,Population signals,Entropy_population
+1,Late,Dir,Places,Parliment,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Places,Parliment,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Dir,Places,Parliment,3,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Dir,Places,Parliment,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Dir,People,Brad Pitt,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,People,Brad Pitt,2,"[2, 0, 2, 0, 0]",1.0
+1,Late,Dir,People,Brad Pitt,3,"[1, 0, 2, 1, 0]",1.5
+1,Late,Dir,People,Brad Pitt,4,"[0, 0, 3, 1, 0]",0.8112781244591328
+1,Late,Dir,Entertainment,Drama,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Entertainment,Drama,2,"[0, 2, 0, 0, 2]",1.0
+1,Late,Dir,Entertainment,Drama,3,"[1, 2, 0, 0, 1]",1.5
+1,Late,Dir,Entertainment,Drama,4,"[0, 1, 0, 0, 3]",0.8112781244591328
+1,Late,Dir,Objects,Television,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Objects,Television,2,"[2, 0, 2, 0, 0]",1.0
+1,Late,Dir,Objects,Television,3,"[4, 0, 0, 0, 0]",-0.0
+1,Late,Dir,Objects,Television,4,"[4, 0, 0, 0, 0]",-0.0
+1,Late,Dir,Abstract,Homesick,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Abstract,Homesick,2,"[0, 2, 0, 2, 0]",1.0
+1,Late,Dir,Abstract,Homesick,3,"[0, 1, 0, 3, 0]",0.8112781244591328
+1,Late,Dir,Abstract,Homesick,4,"[0, 0, 0, 4, 0]",-0.0
+1,Late,Dir,People,Arnold S.,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,People,Arnold S.,2,"[2, 0, 2, 0, 0]",1.0
+1,Late,Dir,People,Arnold S.,3,"[2, 0, 2, 0, 0]",1.0
+1,Late,Dir,People,Arnold S.,4,"[3, 0, 1, 0, 0]",0.8112781244591328
+1,Late,Dir,Places,Theatre,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Places,Theatre,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Dir,Places,Theatre,3,"[0, 4, 0, 0, 0]",-0.0
+1,Late,Dir,Places,Theatre,4,"[0, 4, 0, 0, 0]",-0.0
+1,Late,Dir,Objects,Computer monitor,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Objects,Computer monitor,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Dir,Objects,Computer monitor,3,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Dir,Objects,Computer monitor,4,"[0, 0, 4, 0, 0]",-0.0
+1,Late,Dir,Abstract,Poverty,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Dir,Abstract,Poverty,2,"[0, 0, 2, 0, 2]",1.0
+1,Late,Dir,Abstract,Poverty,3,"[0, 0, 2, 0, 2]",1.0
+1,Late,Dir,Abstract,Poverty,4,"[0, 0, 2, 0, 2]",1.0
+1,Late,Mat,Entertainment,Soap Opera,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,Entertainment,Soap Opera,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Entertainment,Soap Opera,3,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Entertainment,Soap Opera,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Mat,Entertainment,Cartoon,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,Entertainment,Cartoon,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Entertainment,Cartoon,3,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Entertainment,Cartoon,4,"[0, 1, 2, 0, 1]",1.5
+1,Late,Mat,Places,Museum,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,Places,Museum,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Places,Museum,3,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Places,Museum,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Mat,Places,Art Gallery,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,Places,Art Gallery,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Places,Art Gallery,3,"[0, 3, 1, 0, 0]",0.8112781244591328
+1,Late,Mat,Places,Art Gallery,4,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Abstract,Loud,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,Abstract,Loud,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Abstract,Loud,3,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,Abstract,Loud,4,"[0, 1, 2, 0, 1]",1.5
+1,Late,Mat,People,Russell Crowe,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,People,Russell Crowe,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,People,Russell Crowe,3,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,People,Russell Crowe,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+1,Late,Mat,People,Microwave,1,"[1, 1, 1, 1, 0]",2.0
+1,Late,Mat,People,Microwave,2,"[0, 2, 2, 0, 0]",1.0
+1,Late,Mat,People,Microwave,3,"[0, 3, 1, 0, 0]",0.8112781244591328
+1,Late,Mat,People,Microwave,4,"[0, 2, 2, 0, 0]",1.0
+2,Late,Dir,Places,Parliment,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Places,Parliment,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Dir,Places,Parliment,3,"[1, 0, 3, 0, 0]",0.8112781244591328
+2,Late,Dir,Places,Parliment,4,"[1, 0, 3, 0, 0]",0.8112781244591328
+2,Late,Dir,People,Brad Pitt,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,People,Brad Pitt,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Dir,People,Brad Pitt,3,"[1, 0, 2, 1, 0]",1.5
+2,Late,Dir,People,Brad Pitt,4,"[1, 0, 3, 0, 0]",0.8112781244591328
+2,Late,Dir,Entertainment,Drama,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Entertainment,Drama,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Dir,Entertainment,Drama,3,"[1, 2, 1, 0, 0]",1.5
+2,Late,Dir,Entertainment,Drama,4,"[0, 3, 1, 0, 0]",0.8112781244591328
+2,Late,Dir,Objects,Television,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Objects,Television,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Dir,Objects,Television,3,"[0, 0, 4, 0, 0]",-0.0
+2,Late,Dir,Objects,Television,4,"[0, 0, 4, 0, 0]",-0.0
+2,Late,Dir,Abstract,Homesick,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Abstract,Homesick,2,"[0, 2, 0, 2, 0]",1.0
+2,Late,Dir,Abstract,Homesick,3,"[0, 2, 0, 2, 0]",1.0
+2,Late,Dir,Abstract,Homesick,4,"[0, 0, 0, 4, 0]",-0.0
+2,Late,Dir,People,Arnold S.,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,People,Arnold S.,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Dir,People,Arnold S.,3,"[2, 0, 2, 0, 0]",1.0
+2,Late,Dir,People,Arnold S.,4,"[4, 0, 0, 0, 0]",-0.0
+2,Late,Dir,Places,Theatre,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Places,Theatre,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Dir,Places,Theatre,3,"[0, 4, 0, 0, 0]",-0.0
+2,Late,Dir,Places,Theatre,4,"[0, 3, 1, 0, 0]",0.8112781244591328
+2,Late,Dir,Objects,Computer monitor,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Objects,Computer monitor,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Dir,Objects,Computer monitor,3,"[0, 1, 3, 0, 0]",0.8112781244591328
+2,Late,Dir,Objects,Computer monitor,4,"[0, 0, 4, 0, 0]",-0.0
+2,Late,Dir,Abstract,Poverty,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Dir,Abstract,Poverty,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Dir,Abstract,Poverty,3,"[0, 0, 2, 2, 0]",1.0
+2,Late,Dir,Abstract,Poverty,4,"[0, 0, 2, 2, 0]",1.0
+2,Late,Mat,Entertainment,Soap Opera,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,Entertainment,Soap Opera,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Entertainment,Soap Opera,3,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Entertainment,Soap Opera,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+2,Late,Mat,Entertainment,Cartoon,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,Entertainment,Cartoon,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,Entertainment,Cartoon,3,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,Entertainment,Cartoon,4,"[1, 1, 2, 0, 1]",1.9219280948873623
+2,Late,Mat,Places,Museum,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,Places,Museum,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Places,Museum,3,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Places,Museum,4,"[0, 0, 4, 0, 0]",-0.0
+2,Late,Mat,Places,Art Gallery,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,Places,Art Gallery,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Places,Art Gallery,3,"[0, 3, 1, 0, 0]",0.8112781244591328
+2,Late,Mat,Places,Art Gallery,4,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,Abstract,Loud,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,Abstract,Loud,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,Abstract,Loud,3,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,Abstract,Loud,4,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,People,Russell Crowe,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,People,Russell Crowe,2,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,People,Russell Crowe,3,"[0, 2, 2, 0, 0]",1.0
+2,Late,Mat,People,Russell Crowe,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+2,Late,Mat,People,Microwave,1,"[1, 1, 1, 1, 0]",2.0
+2,Late,Mat,People,Microwave,2,"[2, 0, 2, 0, 0]",1.0
+2,Late,Mat,People,Microwave,3,"[3, 0, 1, 0, 0]",0.8112781244591328
+2,Late,Mat,People,Microwave,4,"[2, 0, 2, 0, 0]",1.0
+3,Late,Dir,Places,Parliment,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Places,Parliment,2,"[1, 1, 2, 0, 0]",1.5
+3,Late,Dir,Places,Parliment,3,"[0, 1, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,Places,Parliment,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,People,Brad Pitt,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,People,Brad Pitt,2,"[0, 2, 1, 1, 0]",1.5
+3,Late,Dir,People,Brad Pitt,3,"[0, 1, 1, 2, 0]",1.5
+3,Late,Dir,People,Brad Pitt,4,"[0, 1, 0, 3, 0]",0.8112781244591328
+3,Late,Dir,Entertainment,Drama,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Entertainment,Drama,2,"[0, 2, 2, 0, 0]",1.0
+3,Late,Dir,Entertainment,Drama,3,"[0, 3, 1, 0, 0]",0.8112781244591328
+3,Late,Dir,Entertainment,Drama,4,"[0, 4, 0, 0, 0]",-0.0
+3,Late,Dir,Objects,Television,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Objects,Television,2,"[1, 1, 1, 0, 1]",2.0
+3,Late,Dir,Objects,Television,3,"[1, 0, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,Objects,Television,4,"[0, 1, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,Abstract,Homesick,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Abstract,Homesick,2,"[2, 0, 2, 0, 0]",1.0
+3,Late,Dir,Abstract,Homesick,3,"[2, 0, 2, 0, 0]",1.0
+3,Late,Dir,Abstract,Homesick,4,"[3, 0, 1, 0, 0]",0.8112781244591328
+3,Late,Dir,People,Arnold S.,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,People,Arnold S.,2,"[0, 2, 1, 1, 0]",1.5
+3,Late,Dir,People,Arnold S.,3,"[0, 1, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,People,Arnold S.,4,"[0, 0, 4, 0, 0]",-0.0
+3,Late,Dir,Places,Theatre,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Places,Theatre,2,"[0, 2, 2, 0, 0]",1.0
+3,Late,Dir,Places,Theatre,3,"[0, 2, 2, 0, 0]",1.0
+3,Late,Dir,Places,Theatre,4,"[0, 3, 1, 0, 0]",0.8112781244591328
+3,Late,Dir,Objects,Computer monitor,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Objects,Computer monitor,2,"[0, 1, 2, 0, 1]",1.5
+3,Late,Dir,Objects,Computer monitor,3,"[1, 0, 3, 0, 0]",0.8112781244591328
+3,Late,Dir,Objects,Computer monitor,4,"[0, 0, 4, 0, 0]",-0.0
+3,Late,Dir,Abstract,Poverty,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Dir,Abstract,Poverty,2,"[2, 0, 2, 0, 0]",1.0
+3,Late,Dir,Abstract,Poverty,3,"[2, 0, 2, 0, 0]",1.0
+3,Late,Dir,Abstract,Poverty,4,"[1, 0, 3, 0, 0]",0.8112781244591328
+3,Late,Mat,Entertainment,Soap Opera,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,Entertainment,Soap Opera,2,"[1, 1, 0, 2, 0]",1.5
+3,Late,Mat,Entertainment,Soap Opera,3,"[0, 2, 0, 2, 0]",1.0
+3,Late,Mat,Entertainment,Soap Opera,4,"[0, 1, 0, 3, 1]",1.3709505944546687
+3,Late,Mat,Entertainment,Cartoon,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,Entertainment,Cartoon,2,"[2, 0, 0, 2, 0]",1.0
+3,Late,Mat,Entertainment,Cartoon,3,"[2, 0, 0, 2, 0]",1.0
+3,Late,Mat,Entertainment,Cartoon,4,"[1, 0, 0, 4, 0]",0.7219280948873623
+3,Late,Mat,Places,Museum,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,Places,Museum,2,"[0, 2, 2, 0, 0]",1.0
+3,Late,Mat,Places,Museum,3,"[0, 2, 2, 0, 0]",1.0
+3,Late,Mat,Places,Museum,4,"[0, 3, 0, 0, 1]",0.8112781244591328
+3,Late,Mat,Places,Art Gallery,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,Places,Art Gallery,2,"[0, 2, 0, 2, 0]",1.0
+3,Late,Mat,Places,Art Gallery,3,"[0, 3, 0, 1, 0]",0.8112781244591328
+3,Late,Mat,Places,Art Gallery,4,"[0, 2, 0, 2, 0]",1.0
+3,Late,Mat,Abstract,Loud,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,Abstract,Loud,2,"[2, 0, 0, 2, 0]",1.0
+3,Late,Mat,Abstract,Loud,3,"[2, 0, 0, 2, 0]",1.0
+3,Late,Mat,Abstract,Loud,4,"[1, 0, 0, 3, 0]",0.8112781244591328
+3,Late,Mat,People,Russell Crowe,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,People,Russell Crowe,2,"[0, 2, 2, 0, 0]",1.0
+3,Late,Mat,People,Russell Crowe,3,"[0, 2, 2, 0, 0]",1.0
+3,Late,Mat,People,Russell Crowe,4,"[0, 2, 2, 0, 0]",1.0
+3,Late,Mat,People,Microwave,1,"[1, 1, 1, 1, 0]",2.0
+3,Late,Mat,People,Microwave,2,"[1, 1, 2, 0, 0]",1.5
+3,Late,Mat,People,Microwave,3,"[0, 3, 1, 0, 0]",0.8112781244591328
+3,Late,Mat,People,Microwave,4,"[0, 2, 2, 0, 0]",1.0
