@@ -1,5 +1,4 @@
 # Network connectivity dynamics model
-[![Python build status]
 Agent-based model to calculate convergence and adaptiveness by manipulating connecitvity dynamic and cognitive biases. As described in Segovia Martín, J., Walker, B., Fay, N. &amp; Tamariz, M. (2019). "Network connectivity dynamics affect the evolution of culturally transmitted variants". Preprint https://arxiv.org/abs/1902.06598
 
 The purpose of the model is to understand how the interaction between cognitive biases, memory and the order in which agents pair with each other over time affect convergence. It also aims to evaluate the relative importance of each parameter combination and make predictions on the evolution of cultural diversity. 
